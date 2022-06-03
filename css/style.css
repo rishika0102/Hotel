@@ -1,0 +1,117 @@
+@font-face {
+ font-family:  Roboto-bold;
+ src:url("../font/Roboto-BoldItalic.ttf");
+}
+
+@font-face {
+ font-family:  Roboto-regular;
+ src:url("../font/Roboto-Regular.ttf");
+}
+
+
+.outerdiv {
+  flex-direction:  row;
+  display:  flex;
+  justify-content:  space-between;
+}
+
+.logo {
+  height:  70px;
+  width:  120px;
+  margin:  10px;
+}
+
+.menu {
+  position:  relative;
+  list-style:  none;
+  margin-top:  38px;
+  margin-right:  50px;
+
+}
+
+.list {
+  display:  inline;
+  margin:  7px 12px;
+  font-size:  20px;
+
+}
+
+.list a {
+  text-decoration: none;
+  font-family: Roboto-bold;
+}
+
+a:visited {
+  color:  #21B6A8;
+}
+
+li.service-dropdown:hover  .dropdown {
+  display:  block;
+}
+
+.dropdown a{
+  font-family: Roboto-regular;
+}
+
+.button {
+  padding: 10px;
+  background-color:  white;
+  color:  #21B6A8;
+  font-size:  16px;
+  border-color:  #21B6A8;
+  border-width:  3px;
+}
+
+.dropdown-box {
+ box-shadow: 2px 2px 4px #7E7C73  inset;
+}
+
+.dropdown-box a{
+  display:block;
+  padding: 2px;
+}
+
+.dropdown {
+  position:  absolute;
+  display:  none;
+  width:  80px;
+  color:  #21B6A8;
+  font-size:  16px;
+  border-color:  #21B6A8;
+  border-width:  3px;
+  right:  110px;
+  margin-top:  -5px;
+  transition: 4s;
+  z-index: 1;
+
+}
+
+.image {
+  position: relative;
+}
+
+.overlay_image {
+  margin:10px;
+  height:60%;
+  width:100%;
+}
+
+.overlay {
+  position:  relative;
+  transition: .5s ease;
+  opacity: 0;
+  height: 60%;
+  width:100%;
+  background-color: grey;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
