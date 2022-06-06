@@ -16,16 +16,16 @@
 }
 
 .logo {
-  height:  80px;
-  width:  160px;
+  width: 100%;
+  max-width: 211px;
   margin:  10px -2px;
 }
 
 .menu {
   position:  relative;
   list-style:  none;
-  margin-top:  38px;
-  margin-right:  50px;
+  margin-top:  48px;
+  margin-right:  60px;
 
 }
 
@@ -41,6 +41,11 @@
   font-family:  Roboto-bold;
 }
 
+.list a:hover {
+  /*color: #88B0D7;*/
+  text-decoration: underline;
+}
+
 a:visited {
   color:  #595958;
 }
@@ -54,46 +59,91 @@ li.service-dropdown:hover  .dropdown {
 }
 
 .button {
-  padding:  10px;
-  background-color:  white;
-  color:  #595958;
+  padding: 10px;
+  margin-left: 10px;
+  background-color:  black;
+  color:  white;
   font-size:  16px;
   border-color:  #595958;
-  border-width:  3px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: black;
+  background: transparent;
 }
 
 .dropdown-box {
- box-shadow:  6px 6px 5px #7E7C73  inset;
- border:  2px solid;
+ box-shadow: 10px 10px 10px grey;
+ margin-left: 10px;
 }
 
 .dropdown-box a {
   display:  block;
   padding:  5px;
+  margin-left: 5px;
  }
 
 .dropdown {
   position:  absolute;
   display:  none;
-  width:  100px;
+  width:  110px;
   color:  #595958;
   font-size:  16px;
   border-color:  #595958;
   border-width:  3px;
   right:  110px;
-  margin-top:  -5px;
+  margin-top:  -3px;
   transition:  4s;
   z-index:  1;
-
+  padding:  6px;
+  background-color:  white;
 }
 
 .image {
   position: relative;
+  background-image: url("../images/rmphoto.jpeg");
+  height: 100%;
+  max-height: 570px;
+  width: 100%;
+  max-width: 100%;
+  background-size:  cover;
+  background-position: center;
+   /*opacity:  0.7;*/
 }
 
-.overlay_image {
+/*.overlay_image {
   height:  50%;
   width:  100%;
+}*/
+
+/*.image-content {
+   position:  absolute;
+  bottom: 20%;
+  left: 40%;
+  font-family:  Roboto-regular;
+  font-size:  20px;
+
+
+}*/
+
+.image-block {
+  position:  absolute;
+  font-family:  Roboto-regular;
+  color: white;
+  z-index: 1;
+  max-width:  70%;
+  text-align:  center;
+  left:0;
+  right:0;
+  top:37%;
+  margin: 0px auto;
+}
+
+.content-para {
+  padding:  5px;
+  font-size:  18px;
+  font-family:  Roboto-regular;
 }
 
 .overlay {
@@ -102,7 +152,7 @@ li.service-dropdown:hover  .dropdown {
   opacity:  0;
   height:  100%;
   width:  100%;
-  background-color:  grey;
+  background-color:  #000;
   right:  0;
   left:  0;
   top:  0;
@@ -117,60 +167,46 @@ li.service-dropdown:hover  .dropdown {
 
 }
 
-.image:hover .overlay {
-  opacity:  0.3;
+.about-sec {
+ text-align: center;
 }
 
 .content {
- position:  relative;
- flex-direction: row;
- display:  flex;
-
-
+ width: 100%;
+ max-width: 1200px;
+ margin: 70px auto;
+ text-align: left;
 }
+
 .image_effect {
-  margin:  30px 50px;
+  max-width:  450px;
+  width: 100%;
 }
 
 .image_aftereffect {
-  position: relative;
+    position: relative;
+    width: 47%;
+    display: inline-block;
 }
 
 .image_aftereffect::after {
-   content:  url("../images/dinner.jpeg");
-   width:  260px;
-   height:  200px;
-   position:  absolute;
-   margin-top:  20px;
-   margin-left:  -340px;
-   z-index:  -1;
+    content: '';
+    width: 260px;
+    height: 228px;
+    position: absolute;
+    z-index: -1;
+    left: -24px;
+    top: -18px;
+    background: #000;
 }
 
-.content_menu {
-   margin:  15px;
-   font-family:  Roboto-bold;
-   font-size:  22px;
+.content-head {
+  font-size: 18px;
 }
 
-.image_border {
-  border:  10px solid transparent;
-  border-image-source:  url("../images/dinner.jpeg");
-  max-height:  70%;
-  max-width:   95%;
-  border-image-repeat:  round;
-  border-image-slice:  30;
-}
-
-.content-read {
-  margin:  30px 20px;
-  font-family:  Roboto-regular;
-  font-size:  22px;
-}
-
-.content-reading {
-   margin:  20px 20px;
-  font-family:  Roboto-regular;
-  font-size:  18px;
+.content-block {
+  display: inline-block;
+  width: 47%;
 }
 
 .content_img {
