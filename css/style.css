@@ -6,6 +6,11 @@
      font-family: Roboto-regular;
      src:url("../font/Roboto-Regular.ttf");
 }
+
+p {
+   font-family: Roboto-regular;
+}
+
  .outerdiv {
      flex-direction: row;
      display: flex;
@@ -54,7 +59,7 @@
      border-color: #595958;
      cursor: pointer;
 }
- .button:hover {
+ .head-button:hover {
      color: black;
      background: transparent;
 }
@@ -143,13 +148,14 @@
      text-align: center;
 }*/
  .about-sec {
+     margin-top:  60px;
      text-align: center;
+     font-family: 'Roboto-regular';
 }
  .content {
-     width: 100%;
-     max-width: 1200px;
-     margin: 70px auto;
-     text-align: left;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1111px;
 }
  .image_effect {
      max-width: 450px;
@@ -171,27 +177,48 @@
      background: #000;
 }
  .content-head {
-     font-size: 18px;
+     font-size:  25px;
 }
- .content-block {
+.btn{
+    height: 42px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-color: #595958;
+    cursor: pointer;
+    width: 113px;
+}
+.btn:hover {
+     color: black;
+     background: transparent;
+}
+
+.content-block {
      display: inline-block;
      width: 47%;
 }
  .content_img {
-     flex-direction: row;
-     display: flex;
-     position: relative;
+    width:  100%;
+    max-width:  100%;
 }
- .image_caption {
-     width: 115%;
-     margin-left: -35px;
-     font-size: 18px;
+ .img-name {
+    /*max-height:  250px;
+    height:  100%;*/
+    max-width:  240px;
+    width:  100%;
+    margin-left: 5px;
+}
+
+.image-content {
+  margin-left:  5px;
+  /*background-color: red;*/
 }
  .image_button {
      width: 115%;
      margin-left: -35px;
      height: 10%;
      font-size: 18px;
+}
 }
  .content_image {
      height: 230px;
@@ -302,3 +329,44 @@
      margin-right: 140px;
      color: white;
 }
+/*//blog section css//*/
+.content-blog {
+    text-align:  center;
+    margin-top:  70px;
+    margin-bottom:  70px;
+    font-family: 'Roboto-regular';
+}
+.card {
+    box-shadow:  0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition:  0.3s;
+    width:  26%;
+    display:  inline-block;
+    margin-right:  30px;
+    margin-left:  32px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.image-blog {
+   position:  relative;
+}
+
+.image-text {
+    right: 8px;
+    position: absolute;
+    background-color: black;
+    top: 9px;
+    max-width: 100px;
+    color: #fff;
+    padding: 5px 11px;
+}
+
+.img-bottom {
+    margin-left: 10px;
+}
+
+.img-bottom h4{
+     margin-bottom: 0px;
+  }
