@@ -27,6 +27,9 @@ p {
   margin-top: 48px;
   margin-right: 60px;
 }
+.outerdiv .icon {
+  display:  none;
+}
  .list {
   display: inline;
   margin: 7px 12px;
@@ -222,6 +225,10 @@ p {
 }
 
 /*//bottom section css//*/
+.about-section {
+  display:  flex;
+  flex-direction: row-reverse;
+}
 .footer {
   margin-top: 70px;
   background-color: black;
@@ -259,6 +266,5 @@ p {
   display:  inline;
 }
 .bt-sec {
-  flex-direction: row;
   display: flex;
 }
