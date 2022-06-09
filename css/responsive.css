@@ -1,10 +1,12 @@
 @media only screen and (max-width: 600px) {
-  .menu {display: none;}
+  .menu {
+    display: none;
+}
   .outerdiv a.icon {
     margin: 32px 20px;
     display: block;
     color: black;
-}
+ }
   .menu.responsive {
     position: absolute;
     display: inline-block;
@@ -26,9 +28,6 @@
     padding: 0;
     right: 15px;
 }
-  /*.menu.responsive .list {
-    top: 20px;
-  }*/
   .menu.responsive .list a{
     margin-top: 15px;
     color: white;
@@ -36,16 +35,17 @@
   .menu.responsive a {
     display: block;
 }
- .image-sec {
+  .image-sec {
     max-height: 267px;
 }
- .image-block {
+  .image-block {
     top: 9%;
 }
- .head-button {
+  .head-button {
     background-color: white;
     margin: 20px;
-    color: black; }
+    color: black;
+}
   .about-sec {
     margin-top: 30px;
  }
@@ -63,32 +63,32 @@
     overflow-x: hidden;
     background-color: pink
 }
- .image_aftereffect::after {
+  .image_aftereffect::after {
     display:  none;
  }
- .blog-section {
+  .blog-section {
     display:  flex;
     flex-direction:  column;
  }
- .content-blog {
+  .content-blog {
     margin-top: 30px;
  }
- .card {
+  .card {
     max-width: 300px;
     width: 100%;
     margin: 10px 28px;
  }
- .custom {
+  .custom {
     display:  flex;
     flex-direction: column;
  }
- .info-sec {
+  .info-sec {
      width: 50%;
  }
- .footer li {
+  .footer li {
      text-align:  left;
  }
- .info-sec ul h3 {
+  .info-sec ul h3 {
      text-align:  left;
  }
 }
